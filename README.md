@@ -30,6 +30,16 @@ After unziping the folder ->
 * https://www.pygame.org/docs/
 * https://data-flair.training/blogs/python-ludo-game/ - Visual Assets / Basic Code Base
 
+## Basic Info About The Game
+1. The game is a multiplayer game (2-4 player game). The game can be played with friends or 2-player game with the computer.
+2. Each player has 4 coins. Player can choose which coin to move based on his choice.
+3. Who ever takes all the 4 coins to the end first will be the winner.
+4. Each player spins the dice and moves the respective steps from starting position.
+5. When a player throws a six, he gets to throw again.
+6. Each player should throw a 6 for each coin to get to starting position. When a player throws a six, a coin gets ability to start moving.
+7. Without a 6 there, players cannot start the game.
+8. When a player is at a particular position and if another player lands on same position( other than safe zones) The player who is already in there needs to go to starting position.
+
 ## Notes/Reflections
 This project was challenging due to the novelty of hosting and lack of documentation around pygbag for hosting python pygame projects.  The original source code borrowed from the above website had to be significantly refactored, and all of the variables encapsulated in classes.  For a demonstration of this project, please see the link below. There is a marked dip in performance when hosting the project as opposed to running it natively that was unexpected, and in the future the lesson appears to be that pygame is not the best or even most stable architecture on which to host a game.  
 

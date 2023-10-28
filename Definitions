@@ -1,0 +1,27 @@
+scrum - You need to get a large assignment or task done, and you have several people working with you to this end.  After divying up tasks, how does one ensure the whole project doesn't then divert in several different directions?  You gather everyone into a meeting and ask them to provide updates on their progress, anything that's limiting their progress, and what they plan to get done in the future.  Then open up the conversation for group questions or concerns about anything addressed by that individual.
+
+waterfall - An alternative to agile that focuses on linear progression of tasking, instead of working several elements in parallel. 
+
+mythical man month - You can't make a baby in one month with 9 ladies.  
+
+sprint - A time boxed specific deliverable(s) that is required for the overall product.
+
+user experience - How the user interacts with the system, and how specific functionality or elements can lead or mislead customers in what needs to be done in order to accomplish a specific goal.
+
+RSA - An encryption technique relying on the issue of how complicated it is to factor prime numbers, especially really large ones.  
+
+API - An interface to a piece of software providing programmers hooks or means of interfacing with that software.
+
+Socket - An address that computers can access other computers through via specific openings at that computers general address.
+
+OS - An interface between the user, and the hardware of a computer system.
+
+Embedded System - A piece of code designed in such a way as to take advantage of specific capabilities of the hardware the software is loaded onto.  Usually through specific assembly commands in order to massively speed up the processing of recieved data.
+
+Web Server Stackup - The specific software a programmer utilizes in order to provide a fully functioning website to a remote user.  Includes dynamic content, server side processing like management of cookies, user ids, and serving UX based on the user's specific browser/platform.
+
+Agile - A system of project management that focuses on parallelization, communication, and integration.  Emphasis on rapid delivery of 'minimum viable product' or getting something out that works for the customer to review and give feedback on.
+
+Driver - Embedded software created to specifically address providing the operating system with data from a piece of harware attached to the overall system.
+
+Server - A mediator that directs users to specific content or provides general content to users that remotely connect their computers to it.  It can field thousands or millions of individual requests from various users connected to it, and can vary the content based on the device the user uses to access it, or by the type of content the user is seeking.

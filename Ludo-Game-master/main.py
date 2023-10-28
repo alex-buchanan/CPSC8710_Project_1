@@ -224,7 +224,7 @@ async def main():
                         # Piece will out first only when 6 appears
                         if a == 6 and game.piece_list[0].state == "in":
                             game.piece_list[0].state = "out"
-                            final_position = 1
+                            game.piece_list[0].final_position = 1
                         # if piece are already out
                         elif game.piece_list[0].state == "out":
                             last_posy = game.piece_list[0].final_position
@@ -292,9 +292,9 @@ async def main():
                 game.piece_list[1].update(game.piece_list[1].x, game.piece_list[1].y)
     
         # to move piece
-        game.move_piece(2, game.piece_list[2].final_position, game.piece_list[0].final_position, game.piece_list[1].final_position, game.turn)
-        game.move_piece(0, game.piece_list[0].final_position, game.piece_list[2].final_position, game.piece_list[1].final_position, game.turn)
-        game.move_piece(1, game.piece_list[1].final_position, game.piece_list[0].final_position, game.piece_list[2].final_position, game.turn)
+        game.move_piece(2, game.piece_list[2].final_position, game.piece_list[0].final_position, game.piece_list[1].final_position, "Blue Turn")
+        game.move_piece(0, game.piece_list[0].final_position, game.piece_list[2].final_position, game.piece_list[1].final_position, "Yellow Turn")
+        game.move_piece(1, game.piece_list[1].final_position, game.piece_list[0].final_position, game.piece_list[2].final_position, "Red Turn")
     
         # update the display
         pygame.display.update()

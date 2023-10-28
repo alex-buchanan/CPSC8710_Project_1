@@ -49,7 +49,6 @@ Overall, this project was a good example of the man-month rule.  Adding members 
 
 ## External Links
 Github - https://alex-buchanan.github.io/CPSC8710_Project_1/
-Server Host - 127.0.0.1:8000
 
 
 		

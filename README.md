@@ -31,14 +31,14 @@ After unziping the folder ->
 * https://data-flair.training/blogs/python-ludo-game/ - Visual Assets / Basic Code Base
 
 ## Notes/Reflections
-This project was challenging due to the novelty of hosting and lack of documentation around pygbag for hosting python pygame projects.  The original source code borrowed from the above website had to be significantly refactored, and all of the variables encapsulated in classes.  Despite my best efforts, I was unable to extend hosting to a general audience, however the code runs perfectly when self hosted.  I still do not have an explanation for why this is, but did contribute to solving some ssl bugs in the pygbag project.  There is a marked dip in performance when hosting the project as opposed to running it natively that was unexpected, and in the future the lesson appears to be that pygame and pygbag are not the best or even stable architectures on which to host a webserver if you wish to host a game.  
+This project was challenging due to the novelty of hosting and lack of documentation around pygbag for hosting python pygame projects.  The original source code borrowed from the above website had to be significantly refactored, and all of the variables encapsulated in classes.  For a demonstration of this project, please see the link below. There is a marked dip in performance when hosting the project as opposed to running it natively that was unexpected, and in the future the lesson appears to be that pygame is not the best or even most stable architecture on which to host a game.  
 
 The intergroup challenges mainly stemmed from an inability of other group members to push to or pull from the github repository that was set up despite several attempts to resolve the issue on the owners part.  This apparently limited their ability to contribute to this project significantly.  Scheduling times and group meetings also proved a challenge, as did efforts to resolve issues such as the github issue mentioned above. 
 
 Overall, this project was a good example of the man-month rule.  Adding members more often than not complicates and slows down a project, especially if the other members require significant training.
 
 ## External Links
-Github - https://github.com/alex-buchanan/CPSC8710_Project_1
+Github - https://alex-buchanan.github.io/CPSC8710_Project_1/
 Server Host - 127.0.0.1:8000
 
 

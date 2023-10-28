@@ -44,9 +44,9 @@ class Ludo_Game():
         if self.piece_list[piece_num].state == "in":
             screen.blit(self.piece_list[piece_num].img, (self.piece_list[piece_num].x, self.piece_list[piece_num].y))
         else:
-            global init_pos
+            # global init_pos
             screen.blit(self.piece_list[piece_num].img, self.piece_list[piece_num].p_list[final_pos])
-            init_pos = final_pos
+            self.piece_list[piece_num].initial_position = final_pos
         if self.last_turn == self.piece_list[piece_num].turn and self.turn == self.piece_list[piece_num].turn:
             self.iscollision(final_pos, a_pos, b_pos)
         if self.turn == self.piece_list[a_pos].turn and self.last_turn != self.piece_list[a_pos].turn:

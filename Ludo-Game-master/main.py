@@ -219,7 +219,7 @@ async def main():
                     # pygame.time.wait(800)
                     a = random.randint(1, 6)
                     d = a
-                    last_turn = game.turn
+                    game.last_turn = game.turn
                     if game.turn == "Yellow Turn":
                         # Piece will out first only when 6 appears
                         if a == 6 and game.piece_list[0].state == "in":

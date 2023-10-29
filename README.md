@@ -1,6 +1,6 @@
 ## CPSC8710_Project_1
 
-### Participating Group Members: Alex Buchanan, Pavan Sai Manam
+### Participating Group Members: Alex Buchanan, Pavan Sai Manam , Kishore Patam
 
 ## OBJECTIVES
 This is a variant of the classic 'Sorry' game, where 4x players each roll a dice and move their pieces on a predermined track around the board.  Players roll once, and if they score a 6 on their roll, then they're released from their home base.  If, during their travels around the board, two player pieces happen to land on the same location, the player moving sends the other players piece back to their home base and they have to start over.  The player that makes a full run of the board first wins.

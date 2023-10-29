@@ -41,6 +41,9 @@ class Ludo_Game():
 
 ############# CHECK THIS FUNCTION :
     def move_piece(self, piece_num, final_pos, a_pos, b_pos, turn):
+        comp_piece = piece_num-1
+        if comp_piece == -1:
+            comp_piece = 2
         if self.piece_list[piece_num].state == "in":
             screen.blit(self.piece_list[piece_num].img, (self.piece_list[piece_num].x, self.piece_list[piece_num].y))
         else:
@@ -49,7 +52,7 @@ class Ludo_Game():
             self.piece_list[piece_num].initial_position = final_pos
         if self.last_turn == self.piece_list[piece_num].turn and self.turn == self.piece_list[piece_num].turn:
             self.iscollision(final_pos, a_pos, b_pos)
-        if self.turn == self.piece_list[a_pos].turn and self.last_turn != self.piece_list[a_pos].turn:
+        if self.turn == self.piece_list[comp_piece].turn and self.last_turn != self.piece_list[comp_piece].turn:
             self.iscollision(final_pos, a_pos, b_pos)
         self.game_over(final_pos, a_pos, b_pos)
 
@@ -117,7 +120,7 @@ class Ludo_Game():
         if (self.piece_list[2].p_list[blue_pos][0], self.piece_list[2].p_list[blue_pos][1]) == (227, 260) or (
                 self.piece_list[0].p_list[yellow_pos][0], self.piece_list[0].p_list[yellow_pos][1]) == (262, 295) or (
                 self.piece_list[1].p_list[red_pos][0], self.piece_list[1].p_list[red_pos][1]) == (262, 225):
-            game_over_text = over_font.render("GAME OVER", True, (255, 0, 0))
+            game_over_text = self.over_font.render("GAME OVER", True, (255, 0, 0))
             screen.blit(game_over_text, (80, 250))
             self.turn = "No Turn"
 
@@ -143,12 +146,12 @@ class Pieces(pygame.sprite.Sprite):
 class Dice(pygame.sprite.Sprite):
     def __init__(self):
         # load dice image
-        self.state_1 = pygame.image.load("Ludo_Icons/Dice_1.jpg")
-        self.state_2 = pygame.image.load("Ludo_Icons/Dice_2.jpg")
-        self.state_3 = pygame.image.load("Ludo_Icons/Dice_3.jpg")
-        self.state_4 = pygame.image.load("Ludo_Icons/Dice_4.jpg")
-        self.state_5 = pygame.image.load("Ludo_Icons/Dice_5.jpg")
-        self.state_6 = pygame.image.load("Ludo_Icons/Dice_6.jpg")
+        self.state_1 = pygame.image.load("Ludo_Icons/Dice_1.png")
+        self.state_2 = pygame.image.load("Ludo_Icons/Dice_2.png")
+        self.state_3 = pygame.image.load("Ludo_Icons/Dice_3.png")
+        self.state_4 = pygame.image.load("Ludo_Icons/Dice_4.png")
+        self.state_5 = pygame.image.load("Ludo_Icons/Dice_5.png")
+        self.state_6 = pygame.image.load("Ludo_Icons/Dice_6.png")
         self.dice_list = [self.state_1, self.state_2, self.state_3, self.state_4, self.state_5, self.state_6]
 
     def update(self, a):
@@ -301,7 +304,6 @@ async def main():
         await asyncio.sleep(0)
 
     pygame.quit()
-    sys.exit()
 
 if __name__ == "__main__":
     asyncio.run(main())

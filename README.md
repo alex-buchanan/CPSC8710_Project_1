@@ -41,11 +41,19 @@ After unziping the folder ->
 8. When a player is at a particular position and if another player lands on same position( other than safe zones) The player who is already in there needs to go to starting position.
 
 ## Notes/Reflections
-This project was challenging due to the novelty of hosting and lack of documentation around pygbag for hosting python pygame projects.  The original source code borrowed from the above website had to be significantly refactored, and all of the variables encapsulated in classes.  For a demonstration of this project, please see the link below. There is a marked dip in performance when hosting the project as opposed to running it natively that was unexpected, and in the future the lesson appears to be that pygame is not the best or even most stable architecture on which to host a game.  
+This project presented a unique set of challenges from both a technical and collaborative standpoint. The initial hurdle was the novelty of hosting and the lack of documentation surrounding Pygame for hosting Python game projects. While Pygame is a versatile and widely used library for game development, its application for hosting online multiplayer games may not be the most optimal choice, as the project experienced a significant performance dip when hosted compared to running natively.
 
-The intergroup challenges mainly stemmed from an inability of other group members to push to or pull from the github repository that was set up despite several attempts to resolve the issue on the owners part.  This apparently limited their ability to contribute to this project significantly.  Scheduling times and group meetings also proved a challenge, as did efforts to resolve issues such as the github issue mentioned above. 
+From a technical perspective, the necessity to refactor the borrowed source code and encapsulate variables within classes was a vital but demanding task. This process likely increased the project's maintainability and readability, but it also consumed a significant amount of time and effort.
 
-Overall, this project was a good example of the man-month rule.  Adding members more often than not complicates and slows down a project, especially if the other members require significant training.
+Furthermore, the project highlighted the importance of documentation and thorough codebase explanations. This became especially evident when dealing with the complexities of hosting and online multiplayer integration. Future endeavors in similar domains should prioritize well-documented code and thorough resources to aid in the development process.
+
+Collaboratively, intergroup challenges arose, primarily stemming from issues related to Git and GitHub. The inability of some group members to push to or pull from the GitHub repository posed a considerable obstacle. Despite numerous attempts to address this issue, it hindered the ability of these team members to contribute effectively to the project. This scenario emphasizes the importance of strong version control and Git proficiency within development teams, as well as the need for immediate issue resolution.
+
+Scheduling and group meetings also proved to be challenging aspects of this project. Coordinating the availability of team members and ensuring that group meetings were productive required considerable effort.
+
+The project's overall experience underscores the "man-month rule," which suggests that adding more members to a project can sometimes lead to complications and slow progress, especially if those members require extensive training or face technical difficulties. This observation highlights the significance of assembling a skilled and experienced team, as well as the importance of considering team dynamics and individual skill levels.
+
+In conclusion, this project was a valuable learning experience, both in terms of technical skills and team dynamics. The challenges faced provided insights into the complexities of online game hosting and the significance of well-documented code. While difficulties with Git and group coordination arose, they serve as lessons for future endeavors, emphasizing the importance of technical proficiency and effective communication within a development team.
 
 ## External Links
 Github - https://alex-buchanan.github.io/CPSC8710_Project_1/

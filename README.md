@@ -58,5 +58,5 @@ In conclusion, this project was a valuable learning experience, both in terms of
 ## External Links
 Github - https://alex-buchanan.github.io/CPSC8710_Project_1/
 
-
-		
+## Note
+Please click on the 'spacebar' to start the game. Thank you!
